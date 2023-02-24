@@ -20,3 +20,5 @@ git checkout --file：直接丢弃工作区的修改
          git rm file        
          git commit -m
     误删可用 git checkout --file 恢复
+
+git push origin master：将本地分支的最新修改推送至GitHub
