@@ -11,3 +11,8 @@ git log：显示提交日志（q退出，h查看帮助）
 git reset --hard HEAD^：把文件回退到上一个版本
 git reflog：查看命令历史
 git checkout --file：直接丢弃工作区的修改
+情况1：在工作区做了修改，并未添加到暂存区，想撤销工作区的修改，用 git restore file;
+
+情况2：在工作区做了修改，并用git add 添加到了暂存区，未提交；想撤销，分两步，1.先撤销暂存区的修改，用 git restore --staged file, 2.然后参考情况1撤销工作区的修改；
+
+情况3：在工作区做了修改，且git add git commit添加并提交了内容，想撤销本次提交，直接用 git reset --hard HEAD^回退版本，即可保证工作区，暂存区，版本库都是上次的内容
