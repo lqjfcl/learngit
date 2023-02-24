@@ -7,6 +7,6 @@ git add：把文件添加到仓库（先在文件夹创建文件）
 git commit -m " "：说明提交文件的改动内容，相当于注释
 git status：查看仓库当前状态
 git diff：查看文件修改内容
-git log：显示提交日志
+git log：显示提交日志（q退出，h查看帮助）
 git reset --hard HEAD^：把文件回退到上一个版本
 git reflog：查看命令历史
