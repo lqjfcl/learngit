@@ -10,3 +10,4 @@ git diff：查看文件修改内容
 git log：显示提交日志（q退出，h查看帮助）
 git reset --hard HEAD^：把文件回退到上一个版本
 git reflog：查看命令历史
+git checkout --file：直接丢弃工作区的修改
